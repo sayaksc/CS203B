@@ -1,0 +1,30 @@
+Assigment by Sayak Chakrabarti and Saketh Maddamsetty.
+
+Problem Statement:
+
+1. Recruitment Problem
+Google USA is going to visit IITK to hire the best qualified (good algorithmic and programming skills)
+student in his/her final year. There are n applicants and n is obviously really huge since Google USA is
+offering a huge salary. The following are the constraints:
+Constraints
+  1. The interview panel will select only one applicant and the selection will be based totally on his/her
+  qualifications which can be revealed only after the interview of the applicant.
+  2. The placement office of IITK has enforced that each applicant should be informed about his/her
+  selection or rejection immediately after the interview.
+
+Assumptions
+  1. The qualification score of each person, revealed through interview, is a distinct number. You may
+  assume it to be a real number in the interval (0,1). Alternatively, you may assume it to be a distinct
+  integer in a sufficiently large range.
+  2. The applicants appear for interview in a uniformly random order (Each permutation is equally likely).
+  Considering the contraints and the assumptions stated above, the interview panel of Google USA has devised
+  the following strategy.
+
+The strategy
+  Fix a number k < n. Interview and reject first k applicants. After that continue conducting the interviews,
+  and stop as soon as we find an applicant better than the first k applicants. If we dont find any applicant
+  better than the first k applicants, then no one is hired.
+
+Dependencies for code:
+1. Numpy
+2. Matplotlib
